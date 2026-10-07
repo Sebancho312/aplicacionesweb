@@ -1,0 +1,13 @@
+.caja{
+    width: 300px;
+    padding: 50px;
+    background-color: rgb(241, 171, 79);
+    text-align: center;
+    margin: 50px auto;
+}
+@media (max-width: 600px){
+    .caja{
+        width: 100px;
+        background-color: rgb(104, 160, 235);
+    }
+}

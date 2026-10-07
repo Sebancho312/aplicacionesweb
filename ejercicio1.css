@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 80px 1fr 65px;
+    color: rgb(206, 116, 116);
+    font-family: 'Courier New', Courier, monospace;
+}
+.caja{
+    width: 300px;
+    padding: 50px;
+    background-color: rgb(241, 171, 79);
+    text-align: center;
+    margin: 50px auto;
+}
+@media (max-width: 600px){
+    .caja{
+        width: 100px;
+        background-color: rgb(104, 160, 235);
+    }
+}
+.menu{
+    grid-row: 1/4;
+    background-color: rgb(241, 171, 79);
+}
+#header{
+    grid-column: 2;
+    background-color: rgb(104, 160, 235);
+}
