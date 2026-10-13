@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+    </head>
+    <body>
+        <form>
+            <fieldset class="mb-3">
+                <legend class="form-label fs-6">Formulario de contacto</legend>
+                <div class="mb-3">
+                    <H1>Datos generales</H1>
+                    <label for="Ciudad" class="form-label">Ciudad:</label>
+                    <select id="Ciudad" name="Ciudad" class="form-select" required class="row g-3 col-md-6">
+                        <option value="Ciudad1"> Quito</option>
+                        <option value="Ciudad2" selected>Guayaquill</option>
+                        <option value="Ciudad3">Cuenca</option>
+                        <option value="Ciudad4">Ibarra</option>
+                        <option value="Ciudad5">Otavalo</option>
+                        <option value="Ciudad6">Tulcan</option>
+                    </select>  
+                    <label for="Semestre" class="form-label">Semestre Cursando:</label>
+                    <select id="Semestre" name="Semestre" class="form-select" required class="row g-3 col-md-6">
+                        <option value="Semestre1">Semestre 1</option>
+                        <option value="Semestre2">Semestre 2</option>
+                        <option value="Semestre3">Semestre 3</option>
+                        <option value="Semestre4">Semestre 4</option>
+                        <option value="Semestre5">Semestre 5</option>
+                        <option value="Semestre6">Semestre 6</option>
+                        <option value="Semestre7">Semestre 7</option>
+                        <option value="Semestre8">Semestre 8</option>
+                    </select>
+                </div> 
+            </fieldset>
+            <fieldset class="mb-3">
+                <legend class="form-label fs-6">Servicios</legend>              
+                <h1>Calificacion</h1>
+                <label for="rango" class="form-label">Calificación general de 1 a 10:</label>
+                <input type="range" class="Calificacion" min="1" max="10" value="5" id="rango" oninput="rangeValue.value = this.value">
+                <output name="RangoNota" id="rangeValue" for="rango">5</output>
+                <h1>Servicios</h1>  
+                <label>Biblioteca</label>
+                <input type="checkbox" name="Servicios" value="Biblioteca">
+                <label>Laboratorio</label>
+                <input type="checkbox" name="Servicios" value="Laboratorio">
+                <label>Transporte</label>
+                <input type="checkbox" name="Servicios" value="Transporte">
+                <label>Comedor</label>  
+                <input type="checkbox" name="Servicios" value="Comedor"></br>
+                <label>Frecuencia de Uso: </label>
+                Diario<input type="radio" name="sexo" value="Diario">
+                Semanal<input type="radio" name="sexo" value="Semanal">
+                Mensual<input type="radio" name="sexo" value="Mensual">
+                </legend>
+            </fieldset>
+            <fieldset class="mb-3">
+                <legend class="form-label fs-6">Comentarios</legend>
+                <h1>Color</h1>
+                <label class="form-label">Color Sugerido para nuevo Uniforme:</label>
+                <input type="color" name="Color" value="#ff0000"></br>
+                <Label class="form-label">Escriba su texto aqui:</Label></br>
+                <textarea name="Comentarios" placeholder="Escriba sus comentarios" maxlength="300"></textarea></br>
+                <button type="button" class="btn btn-primary">Enviar Informacion</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
