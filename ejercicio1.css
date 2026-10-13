@@ -1,28 +1,111 @@
-.container{
+.container {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 80px 1fr 65px;
-    color: rgb(206, 116, 116);
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto 1fr auto;
+    min-height: 100vh;
+    color: rgb(20, 20, 20);
     font-family: 'Courier New', Courier, monospace;
 }
-.caja{
-    width: 300px;
-    padding: 50px;
+
+#header{
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#div{
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#div2{
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#main{
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+#footer {
+    min-width: 0;
+    padding: 20px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+#header {
+    min-height: 80px;
+    background-color: rgb(104, 160, 235);
+}
+
+#div {
+    background-color: rgb(228, 182, 98);
+}
+
+#div > p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+#div2 {
+    background-color: rgb(228, 66, 147);
+}
+
+/* Verde */
+#main {
+    background-color: rgb(131, 255, 131);
+}
+
+#footer {
+    min-height: 65px;
+    background-color: rgb(231, 61, 98);
+}
+
+#div2 > .grupo,
+#main > .grupo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.caja {
+    flex: 1 1 220px;
+    min-width: 0;
+    margin: 0;
+    padding: 25px;
     background-color: rgb(241, 171, 79);
     text-align: center;
-    margin: 50px auto;
+    overflow-wrap: anywhere;
 }
-@media (max-width: 600px){
-    .caja{
-        width: 100px;
-        background-color: rgb(104, 160, 235);
+
+.caja h2 {
+    margin-top: 0;
+}
+
+.caja p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    #header,
+    #div,
+    #div2,
+    #main,
+    #footer {
+        padding: 15px;
     }
-}
-.menu{
-    grid-row: 1/4;
-    background-color: rgb(241, 171, 79);
-}
-#header{
-    grid-column: 2;
-    background-color: rgb(104, 160, 235);
+
+    .caja {
+        padding: 20px;
+    }
 }
